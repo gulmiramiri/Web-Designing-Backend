@@ -1,0 +1,1 @@
+./node_modules/.bin/tailwindcss -i ./asset/css/input.css -o ./asset/css/output.css  --watch

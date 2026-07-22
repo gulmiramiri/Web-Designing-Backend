@@ -1,0 +1,73 @@
+*{
+    font-family: sans-serif;
+}
+
+
+.right ul li {
+    padding: 10px;
+}
+
+nav {
+    position: fixed;
+    top: -100%;
+    transition: all .6s ease-in-out;
+}
+
+.active {
+    top: 0;
+}
+
+/* .card .info h2 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.card .info p {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+} */
+
+}
+
+.jjj {
+    transition: background-color .4s ease;
+}
+
+
+
+footer * p  {
+
+    font-size: 14px;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.show {
+    opacity: 1;
+    bottom: 30px;
+}
+
+.showList {
+    opacity: 1;
+    margin-right: 0;
+}
+
+.aa {
+    right: 150px;
+}
+
+@media (width < 443px) {
+        .righthh{
+            display: none;
+        }
+    }
+
+@media (width < 656px){
+    .ddd{
+        display: none;
+    }
+}

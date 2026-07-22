@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-blog-accent: #f59e0b;
+  --color-blog-accent-hover: #d97706;
+  --color-blog-accent-soft: #fef3c7;
+  --color-blog-surface: #ffffff;
+  --color-blog-surface-alt: #f1f1ee;
+  --color-blog-border: #e4e4df;
+  --color-blog-text: #18181b;
+  --color-blog-text-muted: #6b7280;
+  --color-blog-bg: #f8f8f6;
+  --color-admin-nav: #dc2626;
+  --color-admin-sidebar: #f9fafb;
+  --font-blog-heading: "Playfair Display", Georgia, serif;
+  --font-blog-body: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  * {
+    font-family: var(--font-blog-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-blog-heading);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer components {
+  .nav-fixed {
+    position: fixed;
+    top: -100%;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .nav-fixed.active {
+    top: 0;
+  }
+}
+
+@layer components {
+  .admin-sidebar a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+  }
+
+  .admin-sidebar a:hover {
+    background-color: #e5e7eb;
+  }
+
+  .dark .admin-sidebar a {
+    color: #d1d5db;
+  }
+
+  .dark .admin-sidebar a:hover {
+    background-color: #374151;
+    color: #f59e0b;
+  }
+}
